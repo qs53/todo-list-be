@@ -1,0 +1,10 @@
+apiVersion: 0.1
+kind: ComponentConfig
+spec:
+  endpoints:
+    inbound:
+      - name: Covid status REST endpoint
+        port: 8080
+        type: REST
+        networkVisibility: Private
+        context: /covid/status/countries

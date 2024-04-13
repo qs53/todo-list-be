@@ -1,0 +1,18 @@
+[package]
+org = "lenovo"
+name = "todo_list_be"
+version = "0.1.0"
+distribution = "2201.8.5"
+
+[build-options]
+observabilityIncluded = true
+
+[persist]
+datastore = "mysql"
+module = "todo_list_be.store"
+
+[[platform.java17.dependency]]
+groupId = "io.ballerina.stdlib"
+artifactId = "persist.sql-native"
+version = "1.2.1"
+
